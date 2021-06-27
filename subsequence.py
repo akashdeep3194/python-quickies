@@ -16,5 +16,5 @@ def print_all_subsequnce(arr, si=0, ans=[""]):
     return ans
 
 
-array = input()
-print(print_all_subsequnce(array))
+array = list(map(str, sys.stdin.readline().strip().split()))
+print_all_subsequnce(array)
