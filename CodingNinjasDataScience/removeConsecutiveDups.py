@@ -5,13 +5,25 @@ sys.setrecursionlimit(10 ** 6)
 
 
 def removeConsecutiveDuplicates(string):
-    if len(string) <= 1:
+    ans = ""
+    if len(string) == 0:
         return string
-    sa = removeConsecutiveDuplicates(string[1:])
-    if string[0] == sa[0]:
-        return sa
-    else:
-        return string[0] + sa
+    for i in range(len(string) - 1):
+        if string[i] != string[i + 1]:
+            ans += string[i]
+        else:
+            pass
+    ans += string[-1]
+    return ans
+
+    # if len(string) <= 1:
+    #     return string
+    # sa = removeConsecutiveDuplicates(string[1:])
+    # if string[0] == sa[0]:
+    #     return sa
+    # else:
+    #     return string[0] + sa
+    #
 
 
 # Your code goes here
