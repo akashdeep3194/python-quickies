@@ -13,6 +13,6 @@ with open("year2017.csv", "r") as file_obj:
         index_Wounded += 1
     for r in line[1:]:
         if r[index_Wounded] == "":
-            r[index_Wounded] = 0
+            continue
         total_Wounded += math.floor(float(r[index_Wounded]))
     print(total_Wounded)
