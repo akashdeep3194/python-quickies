@@ -16,8 +16,8 @@ for ele in file[:]:
     BasicQualifications = (ele["BASIC QUALIFICATIONS"])
     country_Code = (ele["location"][:2])
     if "Java" in BasicQualifications:
-        jm[country_Code] = jm.get(country_Code,0)+1
-        if count<jm[country_Code]:
-            count=max(count,jm[country_Code])
+        jm[country_Code] = jm.get(country_Code, 0) + 1
+        if count < jm[country_Code]:
+            count = max(count, jm[country_Code])
             ans = country_Code
-print(ans,count)
+print(ans, count)
