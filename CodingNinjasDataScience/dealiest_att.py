@@ -12,9 +12,4 @@ klv = df.loc[k]["Killed"]
 grp = df.loc[k]["Group"]
 ctry = df.loc[k]["Country"]
 
-print(int(klv),ctry,grp)
-
-
-
-
-
+print(int(klv), ctry, grp)
